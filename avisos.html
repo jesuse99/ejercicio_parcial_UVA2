@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav nav-underline">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="avisos.html">Avisos</a>
@@ -36,12 +36,19 @@
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <button class="btn btn-secondary" type="button" id="modo" onclick="setModo()">
-                0
+              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <span class="d-lg-none ms-2">Cambiar tema</span>
+                <span class="ms-2">
+                  <i class="bi bi-moon-fill" id="mode_icon"></i>
+                </span>
               </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button type="button" class="dropdown-item" id="mode_light">Claro</button></li>
+                <li><button type="button" class="dropdown-item" id="mode_dark">Oscuro</button></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        </li>
-        </ul>
       </div>
       </div>
     </nav>
@@ -50,21 +57,21 @@
     <div class="container-fluid d-flex justify-content-center p-4 bg-primary" id="title">
       <h1>Avisos</h1>
     </div>
-    <ul class="list-group" data-bs-theme="dark" id="list">
+    <ul class="list-group list" data-bs-theme="dark">
       <li class="list-group-item d-flex">
-        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+        <input class="form-check-input me-1" type="checkbox" checked>
         <label class="form-check-label" for="firstCheckbox">21/04 Parcial Arquitectura de computadores</label>
       </li>
       <li class="list-group-item d-flex">
-        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+        <input class="form-check-input me-1" type="checkbox" checked>
         <label class="form-check-label" for="secondCheckbox">23/04 Parcial Fundamentos de informatica</label>
       </li>
       <li class="list-group-item d-flex">
-        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+        <input class="form-check-input me-1" type="checkbox" checked>
         <label class="form-check-label" for="thirdCheckbox">24/04 Parcial Marketing</label>
       </li>
       <li class="list-group-item d-flex">
-        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+        <input class="form-check-input me-1" type="checkbox" checked>
         <label class="form-check-label" for="thirdCheckbox">25/04 Parcial Diseño y desarrollo web</label>
       </li>
     </ul>
@@ -74,6 +81,7 @@
     <p>Diseño y Desarrollo Web (15130) / Profesora: Patricia Litovicius</p>
   </footer>
 
+  <script src="jquery.min.js"></script>
   <script src="mode.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"

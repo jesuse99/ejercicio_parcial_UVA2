@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav nav-underline">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="avisos.html">Avisos</a>
@@ -30,19 +30,26 @@
               <a class="nav-link" href="sobremi.html">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="materias2025.html">Materias</a>
+              <a class="nav-link active" href="materias2025.html">Materias</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-                <button class="btn btn-secondary" type="button" id="modo" onclick="setModo()">
-                  0
-                </button>
-              </div>
+              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <span class="d-lg-none ms-2">Cambiar tema</span>
+                <span class="ms-2">
+                  <i class="bi bi-moon-fill" id="mode_icon"></i>
+                </span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><button type="button" class="dropdown-item" id="mode_light">Claro</button></li>
+                <li><button type="button" class="dropdown-item" id="mode_dark">Oscuro</button></li>
+              </ul>
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </nav>
   </header>
@@ -54,32 +61,36 @@
     <section class="container mt-2 mb-2">
       <div class="row">
         <div class="col-lg-6 col-12 d-flex flex-column">
-          <div class="bg-dark p-2 mb-2 flex-fill text-white" id="section">
+          <div class="bg-dark p-2 mb-2 flex-fill text-white section">
             <h5>Fecha de examenes</h5>
             <hr>
-            <ul class="list-group" data-bs-theme="dark" id="list">
+            <ul class="list-group list" data-bs-theme="dark">
               <li class="list-group-item">25/04 Primer Examen </li>
               <li class="list-group-item">25/04 Segundo Examen </li>
               <li class="list-group-item">25/04 Examen Final </li>
             </ul>
           </div>
 
-          <div class="bg-dark p-2 mb-2 flex-fill text-white" id="section">
+          <div class="bg-dark p-2 mb-2 flex-fill text-white section">
             <h5>Biblografia</h5>
             <hr>
-            <ul class="list-group" data-bs-theme="dark" id="list">
-              <li class="list-group-item">NIEDERST ROBBINS, Jennifer. HTML5 Pocket Reference Quick, Comprehensive, Indispensable (Pocket Reference (O'Reilly)). 5ta. Ed.</li>
-              <li class="list-group-item">SCOTT, Emmit. SPA Design and Architecture: Understanding Single Page Web Applications. 1a ed. Nueva York: Manning, 2015.</li>
-              <li class="list-group-item">MEYER, Eric A. Capítulo 1: conceptos básicos. En CSS Pocket Reference. 4ta ed. Sebastopol, California: O'Reilly Media, 2011.</li>
-              <li class="list-group-item">SCHULZ, Ralph G. Diseño web con CSS. 1a ed. México, D. F.: Alfaomega, 2009.</li>
+            <ul class="list-group list" data-bs-theme="dark">
+              <li class="list-group-item">NIEDERST ROBBINS, Jennifer. HTML5 Pocket Reference Quick, Comprehensive,
+                Indispensable (Pocket Reference (O'Reilly)). 5ta. Ed.</li>
+              <li class="list-group-item">SCOTT, Emmit. SPA Design and Architecture: Understanding Single Page Web
+                Applications. 1a ed. Nueva York: Manning, 2015.</li>
+              <li class="list-group-item">MEYER, Eric A. Capítulo 1: conceptos básicos. En CSS Pocket Reference. 4ta ed.
+                Sebastopol, California: O'Reilly Media, 2011.</li>
+              <li class="list-group-item">SCHULZ, Ralph G. Diseño web con CSS. 1a ed. México, D. F.: Alfaomega, 2009.
+              </li>
             </ul>
           </div>
         </div>
         <div class="col-lg-6 col-12">
-          <div class="bg-dark p-2 mb-2 text-white" id="section">
+          <div class="bg-dark p-2 mb-2 text-white section">
             <h5>Actividades UVAs</h5>
             <hr>
-            <ol class="list-group" data-bs-theme="dark" id="list">
+            <ol class="list-group list" data-bs-theme="dark">
 
               <li class="list-group-item">
                 <div class="d-flex justify-content-between align-items-center">
@@ -204,8 +215,11 @@
     <p>Diseño y Desarrollo Web (15130) / Profesora: Patricia Litovicius</p>
   </footer>
 
+  <script src="jquery.min.js"></script>
   <script src="mode.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
