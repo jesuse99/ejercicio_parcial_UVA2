@@ -35,18 +35,24 @@
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
-          </ul>
+            <li class="nav-item">
+              <button class="btn btn-secondary" type="button" id="modo" onclick="setModo()">
+                0
+              </button>
         </div>
+        </li>
+        </ul>
+      </div>
       </div>
     </nav>
   </header>
   <main>
-    <div class="container-fluid d-flex justify-content-center p-4 bg-primary">
+    <div class="container-fluid d-flex justify-content-center p-4 bg-primary" id="title">
       <h1>Sobre mi</h1>
     </div>
 
     <div class="container mt-4">
-      <div class="card mb-3" data-bs-theme="dark">
+      <div class="card mb-3" data-bs-theme="dark" id="card">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="img/foto-jesus.jpg" class="img-fluid rounded-start w-100" alt="foto-jesus">
@@ -56,17 +62,21 @@
               <h5 class="card-title">Jesus Espinoza</h5>
               <p class="text-muted">Licenciatura en Gestion de Tecnologia de la Informacion</p>
               <p class="card-text">Soy apasionado por la tecnologia y la informatica, me
-                encanta poder estudiar y formarme en el desarrollo de paginas web o programas informaticos que solucionan
+                encanta poder estudiar y formarme en el desarrollo de paginas web o programas informaticos que
+                solucionan
                 un determinado problema.</p>
               <p class="card-text">Entre mis actividades extra, <em>hobbies</em>, se encuentra practicar tenis, jugar al
                 ajedrez, aprender nuevas cosas, leer libros o articulos interesantes y ver peliculas de accion.</p>
               </p>
-              <p class="card-text fst-italic">"Si debuggear es el proceso de remover errores de código entonces programar debe ser el proceso de ponerlos" - Edsger Dijkstra</p>
+              <p class="card-text fst-italic">"Si debuggear es el proceso de remover errores de código entonces
+                programar debe ser el proceso de ponerlos" - Edsger Dijkstra</p>
               <div class="d-flex gap-2">
-                <a class="btn btn-outline-primary btn-sm" href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i> Linkedin</a>
-                <a class="btn btn-outline-secondary btn-sm" href="https://github.com/jesuse99" target="_blank"><i class="bi bi-github"></i> Github</a>
+                <a class="btn btn-outline-primary btn-sm" href="https://www.linkedin.com/" target="_blank"><i
+                    class="bi bi-linkedin"></i> Linkedin</a>
+                <a class="btn btn-outline-secondary btn-sm" href="https://github.com/jesuse99" target="_blank"><i
+                    class="bi bi-github"></i> Github</a>
               </div>
-  
+
             </div>
           </div>
         </div>
@@ -74,11 +84,14 @@
     </div>
   </main>
   <footer class="bg-dark p-2 d-flex flex-wrap aling-items-center justify-content-between mt-auto">
-      <h3>UADE</h3>
-      <p>Diseño y Desarrollo Web (15130) / Profesora: Patricia Litovicius</p>
+    <h3>UADE</h3>
+    <p>Diseño y Desarrollo Web (15130) / Profesora: Patricia Litovicius</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="mode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

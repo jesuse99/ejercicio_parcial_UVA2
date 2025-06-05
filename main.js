@@ -4,9 +4,9 @@ const asunto = document.getElementById("asunto");
 const mensaje = document.getElementById("mensaje");
 
 const formulario = document.getElementById("formulario");
-formulario.addEventListener('submit', function(event) {
+formulario.addEventListener('submit', function (event) {
     event.preventDefault()
-    
+
     if (nombre && nombre.value == "") {
         alert("Ingrese un nombre valido");
         return;
@@ -30,3 +30,4 @@ formulario.addEventListener('submit', function(event) {
     alert(`Gracias por contactarse! ${nombre.value} en breve le estare respondiendo`);
     formulario.submit();
 });
+
