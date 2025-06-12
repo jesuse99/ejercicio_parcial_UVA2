@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pagina web personal desarrollada en diseño y desarrollo web">
   <title>Contacto - Ejercicio obligatorio UVA2</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -15,7 +16,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">UVA2</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Cambiar navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -36,15 +37,15 @@
               <a class="nav-link active" href="contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" id="button_mode" aria-label="Cambiar modo">
                 <span class="d-lg-none ms-2">Cambiar tema</span>
                 <span class="ms-2">
                   <i class="bi bi-moon-fill" id="mode_icon"></i>
                 </span>
               </button>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><button type="button" class="dropdown-item" id="mode_light">Claro</button></li>
-                <li><button type="button" class="dropdown-item" id="mode_dark">Oscuro</button></li>
+                <li><button type="button" class="dropdown-item" id="mode_light" aria-label="Modo Claro">Claro</button></li>
+                <li><button type="button" class="dropdown-item" id="mode_dark" aria-label="Modo Oscuro">Oscuro</button></li>
               </ul>
             </li>
           </ul>
@@ -76,12 +77,12 @@
         <label for="mensaje" class="form-label">Mensaje</label>
         <textarea class="form-control" id="mensaje" rows="3"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="submit" class="btn btn-primary" aria-label="Enviar mensaje">Enviar</button>
     </form>
   </main>
 
   <footer class="bg-dark p-2 d-flex flex-wrap aling-items-center justify-content-between mt-auto">
-    <h3>UADE</h3>
+    <p class="h5">UADE</p>
     <p>Diseño y Desarrollo Web (15130) / Profesora: Patricia Litovicius</p>
   </footer>
 
