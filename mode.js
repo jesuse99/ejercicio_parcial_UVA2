@@ -6,12 +6,12 @@ function setModeLight() {
     $('#mode_icon').removeClass('bi-moon-fill').addClass('bi-sun-fill');
 
     $('body').removeClass('bg-black').addClass('bg-white');
-    $('nav').removeClass('bg-dark').addClass('bg-danger');
+    $('nav').removeClass('bg-dark').css('background', '#252440');
 
     const title = $('#title');
     if (title) {
         title.removeClass('bg-primary');
-        title.css('background', '#2f4f4f');
+        title.css('background', '#008f39');
     }
 
     const table = $('table');
@@ -47,7 +47,7 @@ function setModeLight() {
         form.addClass('bg-light').addClass('text-black');
     }
 
-    $('footer').removeClass('bg-dark').addClass('bg-danger');
+    $('footer').removeClass('bg-dark').css('background', '#252440');
 
     localStorage.setItem("pageMode", 0);
 };
@@ -56,11 +56,10 @@ function setModeDark() {
     $('#mode_icon').removeClass('bi-sun-fill').addClass('bi-moon-fill');
 
     $('body').removeClass('bg-white').addClass('bg-black');
-    $('nav').removeClass('bg-danger').addClass('bg-dark');
+    $('nav').css('background', '#212529')
 
     const title = $('#title');
     if (title) {
-        title.removeClass('bg-primary');
         title.css('background', '#0D6EFD');
     }
 
